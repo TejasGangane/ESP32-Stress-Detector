@@ -1,3 +1,20 @@
+# Sweat based Stress Detection System
+
+## **Project Overview**
+
+This project involves building a **real-time stress monitoring system** using **ESP32**, **GSR (Galvanic Skin Response) sensors**, and **temperature sensors**. The system will collect physiological data, process it through an **ML model** (Random Forest), and display stress levels on a **Next.js web application**. The system will have a **baseline detection phase** to accommodate individual variations in sweating rates.
+
+## **Hardware & Circuit Design**
+
+- **ESP32 Pin Assignments**
+    - **GSR Sensor**: Analog input pin **(A0/GPIO36)**
+    - **Temperature Sensor**: **(GPIO4 - OneWire Protocol)**
+    - **Wi-Fi Module**: **Built into ESP32**
+- **Testing Strategy**
+    - Verify sensor readings before ML model training.
+    - Ensure real-time transmission via WebSockets.
+
+----------------------------------------------------------------------------
 
 This directory is intended for PlatformIO Test Runner and project tests.
 
